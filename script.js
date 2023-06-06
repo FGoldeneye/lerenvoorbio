@@ -12,7 +12,7 @@ function clamp(value, min, max) {
     return Math.min(Math.max(value, min), max);
 }
 
-function button3() {
+function button4() {
     window.location.href = "index.html";
 }
 
@@ -39,7 +39,7 @@ function terug() {
     }
 }
 
-function button2() {
+function button1() {
     window.location.href = "flashcards.html";
 }
 

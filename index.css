@@ -6,7 +6,8 @@ body {
     .titel {
         position: relative;
     }
-    .button2 {
+    .button1 {
+        border-radius: 400px;
         background-color: white;
         border: 3px solid #4CAF50;
         color: black;
@@ -16,7 +17,7 @@ body {
         display: inline-block;
         font-size: 16px;
     }
-    .button2:hover {
+    .button1:hover {
         background-color: #4CAF50;
         color: black;
     }
