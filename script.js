@@ -16,6 +16,10 @@ function button4() {
     window.location.href = "index.html";
 }
 
+function button5() {
+    window.location.href = "quiz.html";
+}
+
 function press() {
     currentIndex = (currentIndex + 1) % texts.length;
     currentIndex = clamp(currentIndex, 0, texts.length);
