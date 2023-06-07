@@ -50,7 +50,7 @@ body {
     }
     .button {
         position: relative;
-        bottom: 250px;
+        bottom: 15vh;
     }
     .button2 {
         border-radius: 400px;
