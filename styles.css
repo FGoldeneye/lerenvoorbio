@@ -39,7 +39,7 @@ body {
     .flip-card-back {
     transform: rotateY(180deg);
     }
-    .button {
+    .button {  
     position: relative;
     bottom: 15vh;
     }
