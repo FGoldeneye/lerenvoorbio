@@ -44,7 +44,7 @@ body {
         bottom: 15vh;
     }
     .button2, .button3, .button4 {
-        border-radius: 400px; 
+        border-radius: 200px; 
         background-color: lightgray;
         color: black;
         padding: 15px 32px;
