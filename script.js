@@ -43,6 +43,7 @@ function terug() {
 function button1() {
     window.location.href = "flashcards.html";
 }
+
 function button5() {
     window.location.href = "quiz.html";
 }

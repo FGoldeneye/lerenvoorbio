@@ -2,7 +2,6 @@ body {
     background-color:lightblue;
     color:black;
     text-align:center;
-}
     .titel {
         position: relative;
     }
@@ -21,3 +20,4 @@ body {
         background-color: #4CAF50;
         color: black;
     }
+}
