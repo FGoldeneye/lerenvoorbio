@@ -16,9 +16,6 @@ function button4() {
     window.location.href = "index.html";
 }
 
-function button5() {
-    window.location.href = "quiz.html";
-}
 
 function press() {
     currentIndex = (currentIndex + 1) % texts.length;
@@ -45,6 +42,9 @@ function terug() {
 
 function button1() {
     window.location.href = "flashcards.html";
+}
+function button5() {
+    window.location.href = "quiz.html";
 }
 
 flipCard.addEventListener('click', function() {
