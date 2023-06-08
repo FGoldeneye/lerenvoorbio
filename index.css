@@ -7,8 +7,8 @@ body {
     }
     .button1 {
         border-radius: 25px;
-        background-color: gray;
-        border: 3px solid aqua;
+        background-color: aqua;
+        border: 3px solid gray;
         color: black;
         padding: 15px 32px;
         text-align: center;
@@ -18,8 +18,8 @@ body {
     }
     .button5 {
         border-radius: 25px;
-        background-color: gray;
-        border: 3px solid #4CAF50;
+        background-color: #4CAF50;
+        border: 3px solid gray;
         color: black;
         padding: 15px 32px;
         text-align: center;
@@ -28,11 +28,11 @@ body {
         font-size: 16px;
     }
     .button1:hover{
-        background-color: red;
+        background-color: white;
         color: black;
     }
     .button5:hover {
-        background-color: red;
+        background-color: white;
         color: black;
     }
 }

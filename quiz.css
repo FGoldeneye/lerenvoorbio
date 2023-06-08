@@ -96,7 +96,7 @@ input[type="radio"] {
     display: none;
 }
 
-input[type=radio]:checked ~ .optie {
+input[type="radio"]:checked ~ .optie {
     background: paleturquoise;
 }
 
@@ -199,13 +199,13 @@ input[type=radio]:checked ~ .optie {
         width: 90%;
         height: 80vh;
      }
-     .spel-details-container h1{
+    .spel-details-container h1{
         font-size: 0.8rem;
-     }
-     .spel-vraag-container{
+    }
+    .spel-vraag-container{
         height: 6rem;
-     }
-     .spel-vraag-container h1{
+    }
+    .spel-vraag-container h1{
        font-size: 0.9rem;
     }
     .spel-opties-container span{
