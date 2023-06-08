@@ -3,51 +3,51 @@
     <link rel="stylesheet" type="text/css" href="quiz.css">
 </head>
 
-<body onload="NextQuestion(0)">
+<body onload="VolgendeVraag(0)">
     <main>
-        <!-- creating a modal for when quiz ends -->
-        <div class="modal-container" id="score-modal">
+        <!-- een modaal maken voor wanneer de quiz eindigt -->
+        <div class="modaal-container" id="scoor-modaal">
 
-            <div class="modal-content-container">
+            <div class="modaal-inhoud-container">
 
                 <h1>Gefeliciteerd, Quiz Voltooid.</h1>
 
-                <div class="grade-details">
+                <div class="cijfer-details">
                     <p>Pogingen : 10</p>
-                    <p>Foute Antwoorden : <span id="wrong-answers"></span></p>
-                    <p>Goede Antwoorden : <span id="right-answers"></span></p>
-                    <p>Percentage : <span id="grade-percentage"></span>%</p>
-                    <p ><span id="remarks"></span></p>
+                    <p>Foute Antwoorden: <span id="fout-antwoorden"></span></p>
+                    <p>Goede Antwoorden: <span id="goed-antwoorden"></span></p>
+                    <p>Cijfer: <span id="cijfer"></span></p>
+                    <p ><span id="opmerkingen"></span></p>
                 </div>
 
-                <div class="modal-button-container">
-                    <button onclick="closeScoreModal()">Hervatten</button>
+                <div class="modaal-knop-container">
+                    <button onclick="sluitScoorModaal()">Hervatten</button>
                 </div>
 
             </div>
         </div>
-<!-- end of modal of quiz details-->
+        <!-- einde van modaal van quizdetails-->
 
-        <div class="game-quiz-container">
+        <div class="spel-quiz-container">
 
-            <div class="game-details-container">
-                <h1>Scoren : <span id="player-score"></span> / 10</h1>
-                <h1> Vraag : <span id="question-number"></span> / 10</h1>
+            <div class="spel-details-container">
+                <h1>Scoor : <span id="speler-scoor"></span> / 10</h1>
+                <h1> Vraag : <span id="vraag-nummer"></span> / 10</h1>
             </div>
 
-            <div class="game-question-container">
-                <h1 id="display-question"></h1>
+            <div class="spel-vraag-container">
+                <h1 id="vraag-weergeven"></h1>
             </div>
 
-            <div class="game-options-container">
+            <div class="spel-opties-container">
 
-               <div class="modal-container" id="option-modal">
+               <div class="modaal-container" id="optie-modaal">
 
-                    <div class="modal-content-container">
+                    <div class="modaal-inhoud-container">
                          <h1>U heeft geen antwoord gegeven.</h1>
 
-                         <div class="modal-button-container">
-                            <button onclick="closeOptionModal()">Hervatten</button>
+                         <div class="modaal-knop-container">
+                            <button onclick="sluitoptieModaal()">Hervatten</button>
                         </div>
 
                     </div>
@@ -55,36 +55,36 @@
                </div>
 
                 <span>
-                    <input type="radio" id="option-one" name="option" class="radio" value="optionA" />
-                    <label for="option-one" class="option" id="option-one-label"></label>
+                    <input type="radio" id="optie-een" name="optie" class="radio" value="optieA" />
+                    <label for="optie-een" class="optie" id="optie-een-label"></label>
                 </span>
 
 
                 <span>
-                    <input type="radio" id="option-two" name="option" class="radio" value="optionB" />
-                    <label for="option-two" class="option" id="option-two-label"></label>
+                    <input type="radio" id="optie-twee" name="optie" class="radio" value="optieB" />
+                    <label for="optie-twee" class="optie" id="optie-twee-label"></label>
                 </span>
 
 
                 <span>
-                    <input type="radio" id="option-three" name="option" class="radio" value="optionC" />
-                    <label for="option-three" class="option" id="option-three-label"></label>
+                    <input type="radio" id="optie-drie" name="optie" class="radio" value="optieC" />
+                    <label for="optie-drie" class="optie" id="optie-drie-label"></label>
                 </span>
 
 
                 <span>
-                    <input type="radio" id="option-four" name="option" class="radio" value="optionD" />
-                    <label for="option-four" class="option" id="option-four-label"></label>
+                    <input type="radio" id="optie-vier" name="optie" class="radio" value="optieD" />
+                    <label for="optie-vier" class="optie" id="optie-vier-label"></label>
                 </span>
 
 
             </div>
 
-            <div class="butons">
-                <div class="next-button-container">
-                    <button onclick="handleNextQuestion()">Volgende</button>
+            <div class="knoppen">
+                <div class="volgende-knop-container">
+                    <button onclick="behandelVolgendeVraag()">Volgende</button>
                 </div>
-                <div class="terug-container">
+                <div class="terug-knop-container">
                     <a href="index.html">
                         <button>Terug</button>
                     </a>

@@ -1,261 +1,262 @@
-//this would be the object shape for storing the questions  
- //you can change the questions to your own taste or even add more questions..
- const questions = [
+//dit is de objectvorm voor het opslaan van de vragen
+ const vragen = [
     {
-        question: "welke kleur is insectenbloed?",
-        optionA: "lichtgeel",
-        optionB: "rood",
-        optionC: "lichtblauw",
-        optionD: "donker wit",
-        correctOption: "optionA"
+        vraag: "Welke kleur is insectenbloed?",
+        optieA: "lichtgeel",
+        optieB: "rood",
+        optieC: "lichtblauw",
+        optieD: "donker wit",
+        goedantwoord: "optieA"
     },
 
     {
-        question: "hoe is het bloed van insecten lichtgeel?",
-        optionA: "gele bloedvaten",
-        optionB: "geen witte bloedcellen",
-        optionC: "geen rode bloedcellen",
-        optionD: "geen hemoglobine in bloed",
-        correctOption: "optionD"
+        vraag: "Hoe is het bloed van insecten lichtgeel?",
+        optieA: "gele bloedvaten",
+        optieB: "geen witte bloedcellen",
+        optieC: "geen rode bloedcellen",
+        optieD: "geen hemoglobine in bloed",
+        goedantwoord: "optieD"
     },
 
     {
-        question: "hoelang zijn de darmen van een potvis?",
-        optionA: "10m",
-        optionB: "600m",
-        optionC: "40m",
-        optionD: "500m",
-        correctOption: "optionB"
+        vraag: "Hoelang zijn de darmen van een potvis?",
+        optieA: "10m",
+        optieB: "600m",
+        optieC: "40m",
+        optieD: "500m",
+        goedantwoord: "optieB"
     },
 
     {
-        question: "waarom heeft de hengelvis een lamp?",
-        optionA: "omdat het donker is onder water",
-        optionB: "voor decoratie",
-        optionC: "om prooi te lokken",
-        optionD: "hij kan niet goed zien",
-        correctOption: "optionC"
+        vraag: "Waarom heeft de hengelvis een lamp?",
+        optieA: "omdat het donker is onder water",
+        optieB: "voor decoratie",
+        optieC: "om prooi te lokken",
+        optieD: "hij kan niet goed zien",
+        goedantwoord: "optieC"
     },
 
     {
-        question: "welke tanden ontbreken bij planteneters?",
-        optionA: "voortanden",
-        optionB: "knobbelkiezen",
-        optionC: "ze hebben geen tanden",
-        optionD: "hoektanden",
-        correctOption: "optionD"
+        vraag: "Welke tanden ontbreken bij planteneters?",
+        optieA: "voortanden",
+        optieB: "knobbelkiezen",
+        optieC: "ze hebben geen tanden",
+        optieD: "hoektanden",
+        goedantwoord: "optieD"
     },
 
     {
-        question: "waardoor is een kat slanker dan een koe?",
-        optionA: "de kat beweegt meer",
-        optionB: "korter verteringsstelsel",
-        optionC: "toevallig",
-        optionD: "een koe eet meer",
-        correctOption: "optionB"
+        vraag: "Waardoor is een kat slanker dan een koe?",
+        optieA: "de kat beweegt meer",
+        optieB: "korter verteringsstelsel",
+        optieC: "toevallig",
+        optieD: "een koe eet meer",
+        goedantwoord: "optieB"
     },
 
     {
-        question: "wat voor soort is een koe?",
-        optionA: "planteneter",
-        optionB: "diereneter",
-        optionC: "alleseter",
-        optionD: "graseter",
-        correctOption: "optionA"
+        vraag: "Wat voor soort is een koe?",
+        optieA: "planteneter",
+        optieB: "diereneter",
+        optieC: "alleseter",
+        optieD: "graseter",
+        goedantwoord: "optieA"
     },
 
     {
-        question: "welke overlevingsstrategie heeft de melkslang?",
-        optionA: "camouflage",
-        optionB: "mimicry",
-        optionC: "dieren aanvallen",
-        optionD: "ondergronds blijven",
-        correctOption: "optionB"
+        vraag: "Welke overlevingsstrategie heeft de melkslang?",
+        optieA: "camouflage",
+        optieB: "mimicry",
+        optieC: "dieren aanvallen",
+        optieD: "ondergronds blijven",
+        goedantwoord: "optieB"
     },
 
     {
-        question: "waar zitten de ademhalingsorganen van de wesp",
-        optionA: "in zijn hoofd",
-        optionB: "in zijn stinger",
-        optionC: "door zijn hele lichaan",
-        optionD: "in zijn poten",
-        correctOption: "optionC"
+        vraag: "Waar zitten de ademhalingsorganen van de wesp?",
+        optieA: "in zijn hoofd",
+        optieB: "in zijn stinger",
+        optieC: "door zijn hele lichaan",
+        optieD: "in zijn poten",
+        goedantwoord: "optieC"
     },
 
     {
-        question: "wanneer is je lichaamstemperatuur het hoogst",
-        optionA: "in de ochtend",
-        optionB: "in de middag",
-        optionC: "in de avond",
-        optionD: "in de nacht",
-        correctOption: "optionB"
+        vraag: "Wanneer is je lichaamstemperatuur het hoogst?",
+        optieA: "in de ochtend",
+        optieB: "in de middag",
+        optieC: "in de avond",
+        optieD: "in de nacht",
+        goedantwoord: "optieB"
     },
 
     {
-        question: "wanneer is je lichaamstemperatuur het laagst",
-        optionA: "in de ochtend",
-        optionB: "in de middag",
-        optionC: "in de avond",
-        optionD: "in de nacht",
-        correctOption: "optionD"
+        vraag: "Wanneer is je lichaamstemperatuur het laagst?",
+        optieA: "in de ochtend",
+        optieB: "in de middag",
+        optieC: "in de avond",
+        optieD: "in de nacht",
+        goedantwoord: "optieD"
     }
 ];
 
 
-let shuffledQuestions = [] //empty array to hold shuffled selected questions out of all available questions
+let geschuddevragen = [] //lege array om geschudde geselecteerde vragen uit alle beschikbare vragen te houden
 
-function handleQuestions() { 
-    //function to shuffle and push 10 questions to shuffledQuestions array
-//app would be dealing with 10questions per session
-    while (shuffledQuestions.length <= 9) {
-        const random = questions[Math.floor(Math.random() * questions.length)]
-        if (!shuffledQuestions.includes(random)) {
-            shuffledQuestions.push(random)
+function behandelvragen() { 
+    //functie om te shufflen en 10 vragen naar geschuddevragen array te pushen
+    //app zou 10 vragen per sessie behandelen
+    while (geschuddevragen.length <= 9) {
+        const random = vragen[Math.floor(Math.random() * vragen.length)]
+        if (!geschuddevragen.includes(random)) {
+            geschuddevragen.push(random)
         }
     }
 }
 
 
-let questionNumber = 1 
-let playerScore = 0 
-let wrongAttempt = 0
+let vraagNummer = 1 
+let spelerScoor = 0 
+let foutPogingen = 0
 let indexNumber = 0 
 
 // Functie om de volgende vraag in de array te tonen
-function NextQuestion(index) {
-    handleQuestions()
-    const currentQuestion = shuffledQuestions[index]
-    document.getElementById("question-number").innerHTML = questionNumber
-    document.getElementById("player-score").innerHTML = playerScore
-    document.getElementById("display-question").innerHTML = currentQuestion.question;
-    document.getElementById("option-one-label").innerHTML = currentQuestion.optionA;
-    document.getElementById("option-two-label").innerHTML = currentQuestion.optionB;
-    document.getElementById("option-three-label").innerHTML = currentQuestion.optionC;
-    document.getElementById("option-four-label").innerHTML = currentQuestion.optionD;
+function Volgendevraag(index) {
+    behandelvragen()
+    const huidigvraag = geschuddevragen[index]
+    document.getElementById("vraag-nummer").innerHTML = vraagNummer
+    document.getElementById("speler-scoor").innerHTML = spelerScoor
+    document.getElementById("vraag-weergeven").innerHTML = huidigvraag.vraag;
+    document.getElementById("optie-een-label").innerHTML = huidigvraag.optieA;
+    document.getElementById("optie-twee-label").innerHTML = huidigvraag.optieB;
+    document.getElementById("optie-drie-label").innerHTML = huidigvraag.optieC;
+    document.getElementById("optie-vier-label").innerHTML = huidigvraag.optieD;
 
 }
 
 
-function checkForAnswer() {
-    const currentQuestion = shuffledQuestions[indexNumber] //pakt huidige vraag
-    const currentQuestionAnswer = currentQuestion.correctOption //pakt huidige antwoord
-    const options = document.getElementsByName("option"); //pakt alle opties
-    let correctOption = null
+function controleerVoorAntwoord() {
+    const huidigvraag = geschuddevragen[indexNumber] //pakt huidige vraag
+    const huidigvraagAntwoord = huidigvraag.goedantwoord //pakt huidige antwoord
+    const opties = document.getElementsByName("optie"); //pakt alle opties
+    let goedantwoord = null
 
-    options.forEach((option) => {
-        if (option.value === currentQuestionAnswer) {
-            correctOption = option.labels[0].id
+    opties.forEach((optie) => {
+        if (optie.value === huidigvraagAntwoord) {
+            goedantwoord = optie.labels[0].id
         }
     })
 
-    //checking to make sure a radio input has been checked or an option being chosen
-    if (options[0].checked === false && options[1].checked === false && options[2].checked === false && options[3].checked == false) {
-        document.getElementById('option-modal').style.display = "flex"
+    //controleren of een radio-ingang is gecontroleerd of een optie is gekozen
+    if (opties[0].checked === false && opties[1].checked === false && opties[2].checked === false && opties[3].checked == false) {
+        document.getElementById('optie-modaal').style.display = "flex"
     }
 
-    //checking if checked radio button is same as answer
-    options.forEach((option) => {
-        if (option.checked === true && option.value === currentQuestionAnswer) {
-            document.getElementById(correctOption).style.backgroundColor = "green"
-            playerScore++ //adding to player's score
-            indexNumber++ //adding 1 to index so has to display next question..
-            //set to delay question number till when next question loads
-            setTimeout(() => {
-                questionNumber++
+    //controleren of keuze optie hetzelfde is als antwoord
+    opties.forEach((optie) => {
+        if (optie.checked === true && optie.value === huidigvraagAntwoord) {
+            document.getElementById(goedantwoord).style.backgroundColor = "green"
+            spelerScoor++ //toevoegen aan de scoor van de speler
+            indexNumber++ //1 toevoegen aan index dus moet volgende vraag weergeven
+            //ingesteld om vraagnummer uit te stellen tot wanneer de volgende vraag wordt geladen
+            
+            timeoutinstellen(() => {
+                vraagNummer++
             }, 1000)
         }
 
-        else if (option.checked && option.value !== currentQuestionAnswer) {
-            const wrongLabelId = option.labels[0].id
-            document.getElementById(wrongLabelId).style.backgroundColor = "red"
-            document.getElementById(correctOption).style.backgroundColor = "green"
-            wrongAttempt++ //adds 1 to wrong attempts 
+        else if (optie.checked && optie.value !== huidigvraagAntwoord) {
+            const foutLabelId = optie.labels[0].id
+            document.getElementById(foutLabelId).style.backgroundColor = "red"
+            document.getElementById(goedantwoord).style.backgroundColor = "green"
+            foutPogingen++ //telt 1 op bij foute pogingen
             indexNumber++
-            //set to delay question number till when next question loads
-            setTimeout(() => {
-                questionNumber++
+            //ingesteld om vraagnummer uit te stellen tot wanneer de volgende vraag wordt geladen
+            
+            timeoutinstellen(() => {
+                vraagNummer++
             }, 1000)
         }
     })
 }
 
 
-
-//called when the next button is called
-function handleNextQuestion() {
-    checkForAnswer() //check if player picked right or wrong option
-    unCheckRadioButtons()
-    //delays next question displaying for a second just for some effects so questions don't rush in on player
-    setTimeout(() => {
+//opgeroepen wanneer de volgende knop wordt aangeroepen
+function behandelVolgendeVraag() {
+    controleerVoorAntwoord() //controleer of de speler de juiste of verkeerde optie heeft gekozen
+    oncontroleerRadioKnoppen()
+    //vertraagt ​​de weergave van de volgende vraag een seconde, alleen voor sommige effecten, zodat vragen niet op de speler afstormen
+    
+    timeoutinstellen(() => {
         if (indexNumber <= 9) {
-//displays next question as long as index number isn't greater than 9, remember index number starts from 0, so index 9 is question 10
-            NextQuestion(indexNumber)
+            //geeft volgende vraag weer zolang indexnummer niet groter is dan 9, onthoud dat indexnummer begint bij 0, dus index 9 is vraag 10
+            Volgendevraag(indexNumber)
         }
         else {
-            handleEndGame()//ends game if index number greater than 9 meaning we're already at the 10th question
+            behandelEindSpel()//beëindigt het spel als indexgetal groter is dan 9, wat betekent dat we al bij de 10e vraag zijn
         }
-        resetOptionBackground()
+        resetoptieAchtergrond()
     }, 1000);
 }
 
-//sets options background back to null after display the right/wrong colors
-function resetOptionBackground() {
-    const options = document.getElementsByName("option");
-    options.forEach((option) => {
-        document.getElementById(option.labels[0].id).style.backgroundColor = ""
+//zet opties background terug op null na weergave juiste/verkeerde kleuren
+function resetoptieAchtergrond() {
+    const opties = document.getElementsByName("optie");
+    opties.forEach((optie) => {
+        document.getElementById(optie.labels[0].id).style.backgroundColor = ""
     })
 }
 
-// unchecking all radio buttons for next question(can be done with map or foreach loop also)
-function unCheckRadioButtons() {
-    const options = document.getElementsByName("option");
-    for (let i = 0; i < options.length; i++) {
-        options[i].checked = false;
+// alle radio knoppen oncontroleren voor volgende vraag(kan ook worden gedaan met map of voorelk loop)
+function oncontroleerRadioKnoppen() {
+    const opties = document.getElementsByName("optie");
+    for (let i = 0; i < opties.length; i++) {
+        opties[i].checked = false;
     }
 }
 
-// function for when all questions being answered
-function handleEndGame() {
-    let remark = null
-    let remarkColor = null
+// function for when all vragen being antwoorded
+function behandelEindSpel() {
+    let opmerking = null
+    let opmerkingKleur = null
 
-    // condition check for player remark and remark color
-    if (playerScore <= 3) {
-        remark = "Blijf oefenen."
-        remarkColor = "red"
+    // controleer de speler scoor voor commentatie en ook de kleur die erbij hoort
+    if (spelerScoor <= 3) {
+        opmerking = "Blijf oefenen."
+        opmerkingKleur = "red"
     }
-    else if (playerScore >= 4 && playerScore < 8) {
-        remark = "Ok score, je kan beter."
-        remarkColor = "orange"
+    else if (spelerScoor >= 4 && spelerScoor < 8) {
+        opmerking = "Scoor kan beter."
+        opmerkingKleur = "orange"
     }
-    else if (playerScore >= 8) {
-        remark = "Goed gedaan!"
-        remarkColor = "green"
+    else if (spelerScoor >= 8) {
+        opmerking = "Goed gedaan!"
+        opmerkingKleur = "green"
     }
-    const playerGrade = (playerScore / 10) * 100
+    const spelerCijfer = (spelerScoor / 10)
 
-    //data to display to score board
-    document.getElementById('remarks').innerHTML = remark
-    document.getElementById('remarks').style.color = remarkColor
-    document.getElementById('grade-percentage').innerHTML = playerGrade
-    document.getElementById('wrong-answers').innerHTML = wrongAttempt
-    document.getElementById('right-answers').innerHTML = playerScore
-    document.getElementById('score-modal').style.display = "flex"
+    //gegevens om weer te geven op het scorebord
+    document.getElementById('opmerkingen').innerHTML = opmerking
+    document.getElementById('opmerkingen').style.color = opmerkingKleur
+    document.getElementById('cijfer').innerHTML = spelerCijfer
+    document.getElementById('fout-antwoorden').innerHTML = foutPogingen
+    document.getElementById('goed-antwoorden').innerHTML = spelerScoor
+    document.getElementById('scoor-modaal').style.display = "flex"
 
 }
 
-//closes score modal, resets game and reshuffles questions
-function closeScoreModal() {
-    questionNumber = 1
-    playerScore = 0
-    wrongAttempt = 0
+//sluit scoor modaal, opnieuw spel laten beginnen en herschudt vragen
+function sluitscoorModaal() {
+    vraagNummer = 1
+    spelerScoor = 0
+    foutPogingen = 0
     indexNumber = 0
-    shuffledQuestions = []
-    NextQuestion(indexNumber)
-    document.getElementById('score-modal').style.display = "none"
+    geschuddevragen = []
+    Volgendevraag(indexNumber)
+    document.getElementById('scoor-modaal').style.display = "none"
 }
 
-//function to close warning modal
-function closeOptionModal() {
-    document.getElementById('option-modal').style.display = "none"
+//function to sluit warning modaal
+function sluitoptieModaal() {
+    document.getElementById('optie-modaal').style.display = "none"
 }

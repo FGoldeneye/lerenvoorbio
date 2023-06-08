@@ -1,5 +1,5 @@
 body {
-    background-color:black;
+    background-color:limegreen;
     text-align:center;
     }
     .container {
@@ -10,7 +10,6 @@ body {
     }
     .flip-card {
         background-color: transparent;
-        border-radius: 400px;
         width: 300px;
         height: 300px;
         align-items: center;
@@ -35,6 +34,10 @@ body {
         height: 100%;
         backface-visibility: hidden;
         border-radius: 20px;
+        border-style: solid;
+        border-width: 5px;
+        border-color:aqua;
+        border-radius: 25px;
     }
     .flip-card-back {
         transform: rotateY(180deg);
@@ -45,15 +48,19 @@ body {
     }
     .button2, .button3, .button4 {
         border-radius: 25px; 
-        background-color: lightgray;
+        background-color: white;
         color: black;
         padding: 15px 32px;
         text-align: center;
         text-decoration: none;
         display: inline-block;
         font-size: 16px;
+        border-style: solid;
+        border-width: 5px;
+        border-color:aqua;
+        border-radius: 25px;
     }
     .button2:hover, .button3:hover, .button4:hover {
-        background-color: gray;
+        background-color: red;
         color: lightgray;
     }
